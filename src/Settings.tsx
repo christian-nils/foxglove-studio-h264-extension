@@ -28,6 +28,7 @@ const useH264State = (context: PanelExtensionContext): UseH264StateType => {
         (topic) =>
           topic.schemaName === "sensor_msgs/CompressedImage" ||
           topic.schemaName === "sensor_msgs/msg/CompressedImage" ||
+          topic.schemaName === "foxglove_msgs/CompressedVideo" ||
           topic.schemaName === "foxglove_msgs/msg/CompressedVideo",
       ),
     [topics],
